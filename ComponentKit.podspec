@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.libraries = "c++"
   s.requires_arc = true
   s.xcconfig = {"CLANG_CXX_LANGUAGE_STANDARD"=>"c++11", "CLANG_CXX_LIBRARY"=>"libc++"}
-  s.source = https://github.com/pingwinator/componentkit.git
-
+  #s.source = https://github.com/pingwinator/componentkit.git
+s.source = { :git => 'https://github.com/facebook/ComponentKit.git' }
   s.ios.deployment_target    = '8.1'
   s.ios.vendored_framework   = 'ios/ComponentKit.framework'
   s.tvos.deployment_target    = '9.1'
