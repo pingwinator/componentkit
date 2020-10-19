@@ -40,7 +40,7 @@ void Sections::move(NSInteger fromIndex, NSInteger toIndex)
 {
   auto move = std::make_pair(fromIndex, toIndex);
   CKInternalConsistencyCheckIf(_moves.find(move) == _moves.end(),
-                               ([NSString stringWithFormat:@"%zd already exists in move commands", index]));
+                               ([NSString stringWithFormat:@"%zd already exists in move commands", (long)index]));
   _moves.insert(move);
 }
 
