@@ -13,7 +13,5 @@ Pod::Spec.new do |s|
   #s.source = https://github.com/pingwinator/componentkit.git
 s.source = { :git => 'https://github.com/facebook/ComponentKit.git' }
   s.ios.deployment_target    = '8.1'
-  s.ios.vendored_framework   = 'ios/ComponentKit.framework'
-  s.tvos.deployment_target    = '9.1'
-  s.tvos.vendored_framework   = 'tvos/ComponentKit.framework'
+  s.ios.vendored_framework   = 'ios/ComponentKit.xcframework'
 end
